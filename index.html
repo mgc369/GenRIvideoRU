@@ -156,8 +156,8 @@
               
                 <div style="text-align: center; margin: 40px auto;">
                     <a class="cta-button"
-                       href="https://mail.google.com/mail/?view=cm&fs=1&to=genricontent@gmail.com"
-                       target="_blank">
+                       href="#"
+                       onclick="openGenriMail(event)">
                         ОТПРАВИТЬ ЗАЯВКУ
                     </a>
                 </div>
@@ -168,8 +168,19 @@
 
         <footer class="footer">
             <h3>Делегируйте «штамповку» видеоконтента нам!<br>Развивайте свой бизнес!</h3>
-            <!--a href="tel:+77474630542" class="cta-button">ОФОРМИТЬ ЗАКАЗ</a-->
         </footer>
+
+        <script>
+            function openGenriMail(e) {
+                if (e) e.preventDefault();
+                var isMobile = /Android|webOS|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(navigator.userAgent);
+                if (isMobile) {
+                    window.location.href = "mailto:genricontent@gmail.com";
+                } else {
+                    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=genricontent@gmail.com", "_blank");
+                }
+            }
+        </script>
 
     </body>
 </html>
