@@ -241,6 +241,10 @@ tbody tr:nth-child(even) {
     font-size: 25px;
 }
 
+.price-info {
+    margin-top: -18px;
+}
+
 .price-section {
     background-color: #cac6c6;
     text-align: center;
