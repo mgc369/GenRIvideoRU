@@ -21,6 +21,7 @@ h2, h3 {
 
 /* ==================== HERO SECTION ==================== */
 .hero {
+    margin-top: -20px;
     background-color: #fff; /* Глубокий синий */
     color: #2e2d2d;
     padding: 60px 5% 5px;
